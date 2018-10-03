@@ -7,14 +7,18 @@ public class Event {
 
   private String title;  
   private String location;
+  private Time beginTime;
+  private Time endTime;
   private Date eventDate;
   private double price;
   private int attendees; 
 
 
-  public Event(String title, String location, Date eventDate, double price, int attendees) {
+  public Event(String title, String location, Time beginTime, Time endTime, Date eventDate, double price, int attendees) {
       this.title = title;
-      this.location = location; 
+      this.location = location;
+      this.beginTime = beginTime;
+      this.endTime = endTime;
       this.eventDate = eventDate;
       this.price = price;
       this.attendees = attendees;    
@@ -38,6 +42,22 @@ public class Event {
 
   public void setLocation(String location) {
     this.location = location;
+  }
+
+  public Time getBeginTime() {
+      return beginTime;
+  }
+
+  public void setBeginTime() {
+      this.beginTime = beginTime;
+  }
+
+  public Time getEndTime() {
+      return endTime;
+  }
+
+  public void setEndTime() {
+      this.endTIme = endTime;
   }
 
 
